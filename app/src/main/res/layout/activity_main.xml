@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="alien.valency.com.myapplication.MainActivity">
+
+        <TextView
+        android:id="@+id/tx_header1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#0000cc"
+        android:text = "Hi Coach !"
+        android:textSize="36dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/alien_pic2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tx_header1"
+        android:src="@mipmap/alient2"
+       />
+
+        <TextView
+        android:id="@+id/tx_header2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alien_pic2"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal"
+        android:textColor="#000000"
+        android:text="ניתקלתי בבעיה קטנה, \n תוכל לעזור לי בבקשה..."
+        android:textSize="15dp"
+            />
+
+        <TextView
+        android:id="@+id/spacing1"
+        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/tx_header2"
+        android:text= " . "
+        />
+
+
+        <Button
+            android:id="@+id/bt_play"
+            android:layout_centerHorizontal="true"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/spacing1"
+            android:text="Play"
+            android:background="@color/colorPrimary"
+            android:textColor="#00a100"
+            android:onClick="openPathScreen"
+            android:elevation="5dp"
+            tools:text="Play"
+            android:contentDescription="Go @string/title_activity_open_Path_screen1" />
+
+            <TextView
+            android:id="@+id/spacing2"
+            android:layout_height="50dp"
+            android:layout_width="220dp"
+            android:layout_below="@id/bt_play"
+            android:layout_centerHorizontal="true"
+            android:text= " . "
+            />
+
+     <Button
+            android:id="@+id/b_boo"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignRight="@id/spacing2"
+            android:layout_below="@id/spacing2"
+            android:text="Say boo !!!"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            />
+        <Button
+            android:id="@+id/bt_para"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/spacing2"
+            android:layout_below="@id/spacing2"
+            android:text="System"
+            android:onClick="openSystemScreen"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            style="@style/Widget.AppCompat.Button"
+            android:elevation="9dp" />
+    <TextView
+        android:id="@+id/spacing3"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/bt_para"
+        android:layout_centerHorizontal="true"
+        android:text= " ...... "
+        />
+
+</RelativeLayout>
